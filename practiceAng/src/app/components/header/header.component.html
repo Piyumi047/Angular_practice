@@ -1,1 +1,17 @@
-<p>header works!</p>
+<!--<mat-slide-toggle>Toggle me!</mat-slide-toggle>
+<button mat-raised-button color="primary">Primary</button>-->
+  <mat-toolbar color="primary" role="heading" >
+    <mat-toolbar-row>
+    <!--<button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>-->
+      <mat-icon style="cursor: pointer; color: white " (click)="toggleMenu()">menu</mat-icon>
+      <span class="example-spacer"></span>
+      <span>SpringBoot Angular Practice</span>
+      <span class="example-spacer"></span>
+      <mat-icon style="cursor: pointer; color: red">logout</mat-icon>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+
+
