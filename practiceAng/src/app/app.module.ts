@@ -10,15 +10,16 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from "@angular/material/icon";
 import { ContentComponent } from './components/content/content.component';
-
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from "@angular/material/list";
 import {MatLegacyListModule} from "@angular/material/legacy-list";
+import { CarComponent } from './components/car/car.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ContentComponent
+    ContentComponent,
+    CarComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +31,7 @@ import {MatLegacyListModule} from "@angular/material/legacy-list";
     MatIconModule,
     MatSidenavModule,
     MatListModule,
-    MatLegacyListModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

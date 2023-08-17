@@ -1,10 +1,23 @@
-<mat-drawer-container class="example-container" autosize>
-  <mat-drawer [opened]="opend"] mode="side">
+<mat-drawer-container >
+  <mat-drawer [opened]="opened" mode="side">
     <mat-list>
-      <mat-list-item routerLinkActive="['active']">
-          <mat-icon color="primary" mat-list-icon></mat-icon>
-        <a>Cast</a>
+      <mat-list-item [routerLinkActive]="['active']">
+        <mat-icon color="primary" mat-list-icon inline>directions_car</mat-icon>
+        <a routerLink="/cars" mat-line>Cars</a>
       </mat-list-item>
+      <mat-list-item [routerLinkActive]="['active']">
+          <mat-icon color="primary" mat-list-icon inline>sell</mat-icon>
+           <a mat-line>Fuel-Type</a>
+      </mat-list-item>
+      <mat-list-item [routerLinkActive]="['active']">
+        <mat-icon color="primary" mat-list-icon inline>store</mat-icon>
+        <a mat-line>Reservation</a>
+      </mat-list-item>
+      <mat-list-item [routerLinkActive]="['active']">
+        <mat-icon color="primary" mat-list-icon inline>badge</mat-icon>
+        <a mat-line>Reports</a>
+      </mat-list-item>
+
     </mat-list>
   </mat-drawer>
 
@@ -16,3 +29,4 @@
 </mat-drawer-content>
 
 </mat-drawer-container>
+

@@ -7,11 +7,11 @@ import {MenuService} from "../../service/menu.service";
   styleUrls: ['./content.component.scss']
 })
 export class ContentComponent {
-  opend = true;
+  opened = true;
 
   constructor(private menuService:MenuService) {
     this.menuService.isOpened.subscribe(data =>{
-        this.opend=data;
+        this.opened = data;
       })
   }
 }

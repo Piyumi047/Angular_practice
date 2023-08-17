@@ -10,6 +10,6 @@ export class HeaderComponent {
   constructor(private menuService :MenuService) {
   }
   toggleMenu() {
-
+     this.menuService.toggle();
   }
 }

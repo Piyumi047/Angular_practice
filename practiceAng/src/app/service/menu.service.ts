@@ -8,10 +8,10 @@ export class MenuService {
 
   constructor() { }
   public isOpened = new BehaviorSubject<boolean>(false)
-  public opend=false;
+  public opened=false;
 
   public toggle(){
-    this.opend=!this.opend;
-    this.isOpened.next(this.opend);
+    this.opened=!this.opened;
+    this.isOpened.next(this.opened);
   }
 }
